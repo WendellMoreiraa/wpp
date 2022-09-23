@@ -1,0 +1,109 @@
+.chatWindow{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 70vw;
+}
+.chatWindow--header{
+  height:60px;
+  width: 99%;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content:space-between;
+  align-items:center;
+}
+.chatWindow--headerInfo{
+  display: flex;
+  align-items:center;
+  cursor: pointer;
+}
+
+
+.chatWindow--avatar{
+  width:40px;
+  height:40px;
+  border-radius:50%;
+  margin: 0 15px;
+}
+.chatWindow--name{
+  font-size:17;
+  color: #000;
+}
+
+.chatWindow--headerButtons{
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+}
+.chatWindow--btn{
+  width:40px;
+  height:40px;
+  border-radius:50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: all ease 0.3s;
+}
+.btn-emoji{
+  overflow: hidden;
+  margin:0;
+}
+.chatWindow--body{
+  flex: 1;
+  overflow-y: auto;
+  background-color: #e5ddd5;
+  background-size: cover;
+  background-position: center;
+  background-image: url('https://neuroup.com.br/wp-content/uploads/2019/12/Fundo-WhatsApp.jpg');
+  padding: 20px 30px;
+}
+.chatWindow::-webkit-scrollbar{
+  height: 6px;
+  width: 6px; 
+}
+.chatWindow::-webkit-scrollbar-thumb{
+  background-color: rgba(0,0,0,0.2);
+}
+.chatWindow--footer {
+  height:62px;
+  display: flex;
+  align-items: center;
+}
+.chatWindow--pre{
+  display: flex;
+  margin: 0 15px;
+}
+.chatWindow--inputarea{
+  flex:1;
+}
+.chatWindow--input{
+  width:100%;
+  height:40px;
+  border:0;
+  outline:0;
+  background-color:#FFF;
+  border-radius:20px;
+  font-size:15px;
+  color:#4A4A4A;
+  padding-left: 15px;
+}
+.chatWindow--pos{
+  display: flex;
+  margin: 0 15px;
+}
+.chatWindow--emojiArea{
+  height: 200px;
+  overflow-y: hidden;
+  transition: all ease 0.3s;
+}
+
+.emoji-picker-react {
+  width: auto !important;
+  background: none !important;
+}
+
+.emoji-picker-react .emoji-group:before{
+  background: none !important;
+}
